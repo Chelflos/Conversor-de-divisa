@@ -1,0 +1,115 @@
+
+
+input{
+    color: var(--negro);
+}
+input::placeholder{
+color: var(--negro);
+font-family: "Montserrat", sans-serif;
+font-size: 1.1em;
+font-weight: bold;
+}
+
+.aniLabel{
+    box-sizing: border-box ;
+    height:50px;
+    width: 40px;
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 30px;
+    color: var(--negro); 
+    background: transparent;
+    padding-right: 240px;
+    margin: 0 20px;
+    transition:  0.2s ease;
+    white-space: nowrap;
+    display: flex;
+    text-align: right;
+    margin-right: 170px;
+    z-index: 1;
+    visibility: hidden;
+
+}
+.aniLabel:hover{
+    color: var(--negro);
+}
+input:hover{
+    border: 5px solid var(--blanco);
+    background: var(--negro);
+    
+    
+    
+}
+input:focus:hover{
+    border: 5px solid var(--negro);
+    background: var(--blanco);
+    
+    
+    
+}
+input:focus:hover::placeholder{
+    color: var(--blanco);
+    
+    
+    
+}
+input:hover::placeholder{
+    color: var(--blanco);
+}
+input:hover+.aniLabel{
+    color: var(--negro);
+}
+input:focus,
+input:valid{
+    color: var(--negro);
+    border: 5px solid var(--negro);
+    outline-style: inset;
+    outline: none;
+    box-shadow: 2px 3px 2px 2px rgba(0, 0, 0, 0.078);
+    border-top: none;
+    
+}
+input:focus + .aniLabel,
+input:valid + .aniLabel{
+   visibility: visible;
+    width: fit-content;
+    height: 25px;
+    
+    padding-bottom: 5px;
+    padding: 0;
+    padding-left: 15px;
+    line-height: 30px;
+    justify-content: left;
+    font-weight:700;
+    color: var(--negro);
+    border: none;
+    transform: translate(-10px,-21px) scale(0.88);
+    z-index: 1;
+    display: flex;
+    align-content: center;
+
+    background-color: transparent
+    
+}
+input:focus:hover,
+input:active:hover{
+    border-top: 0px;
+}
+
+
+input:focus:hover::placeholder,
+input:active:hover::placeholder{
+    color: var(--blanco);
+
+}
+
+#output-currency:hover{
+background-color: var(--blanco);
+border-color: var(--negro);
+}
+#output-currency:hover::placeholder{
+    color: var(--negro);
+    border-top: 0px;
+}

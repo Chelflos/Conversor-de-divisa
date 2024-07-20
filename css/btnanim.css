@@ -1,0 +1,61 @@
+/*
+Para hacer una diagonales utiliza bordes de cajas
+*/
+.convertir{
+    display: inline-flex;
+	width: 250px;
+	height: 9vh;
+	align-items: center;
+	justify-content: center;
+	background: var(--blanco);
+    border: none;
+	color: var(--negro);
+	font-family: "Montserrat", sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .2s ease all;
+	border-radius: 10px;
+	position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: 5px solid var(--negro);
+    border-radius: 50px;
+    transition: 0.3s ease-in-out all;
+    margin-top: 20px;
+    
+}
+.convertir::after{
+    content:"";
+    width: 100%;       
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: calc(-100% - 80px);   
+    background-color: transparent;
+    /*para que se sitúe a la izquierda fuera de la caja y no se vean los bordes, 
+    se calcula el 100% del ancho del elemento,menos el grosor del borde*/
+    border-bottom: 100px solid var(--negro);    
+    border-right: 100px solid transparent;   /*Para obtener la diagonal*/
+    transition: 0.8s ease-in-out all;
+    
+}
+.convertir:active::after{
+    border-bottom: 100px solid rgb(106, 106, 245);
+}
+
+.convertir:hover{
+
+    color: var(--blanco);
+    border: none;    
+    background: transparent;
+    z-index: 1;
+   
+}
+.convertir:hover:after{
+top:0;
+left: 0;
+
+}

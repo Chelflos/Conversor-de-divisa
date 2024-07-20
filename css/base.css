@@ -1,0 +1,75 @@
+
+
+div{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}span{
+    position: relative;
+    z-index: 1;
+    transition:  3s ease all;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+    }
+
+select{
+    
+    appearance:none;
+    box-sizing: border-box;
+    width: 160px;
+    text-align: center;
+    margin-left: 15px;
+    border-radius: 40px;
+    border: 5px solid var(--negro);
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3em;
+    font-weight:bold;
+    color: var(--negro);
+    cursor: pointer;
+    background-color: var(--blanco);
+    
+}
+select:hover{
+    border: 5px solid var(--blanco);
+    color: var(--blanco);
+    background-color: var(--negro);
+    }
+
+select:focus,
+select:visited{
+    color: rgb(126, 126, 126);
+    border: 5px solid var(--negro);
+    outline-style: inset;
+    outline: none;
+    box-shadow: 2px 3px 2px 2px rgba(0, 0, 0, 0.078);
+}
+select:focus:hover,select:visited:hover{
+color: var(--negro);
+border-color: var(--negro);
+background-color: var(--blanco);
+
+}
+option{
+ 
+    border: 5px solid darkgray;
+}
+
+.destino{
+    margin-top: 20px;
+    color: darkgray;
+}
+
+.convertir{
+    height: 80px;
+    width: 300px;
+    
+
+
+}
+
+

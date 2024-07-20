@@ -1,0 +1,1253 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,900;1,900&display=swap');
+
+:root {
+    --nAlto: #F29F05;
+    --nMedio: #F2B705;
+    --nBajo: #F2D338;
+    --blanco: #F2E3D0;
+    --negro: #595348;
+
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100dvh;
+    width: 100dvw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+header {
+
+    width: 100%; 
+    height: 100px;
+    background: var(--negro);
+    z-index: 1;
+    padding-bottom: 20px;
+
+}
+
+
+footer {
+    width: 100vw;
+    height: 80px;
+    background-color: var(--negro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.6em;
+    font-weight: 800;
+    color: var(--blanco);
+    text-transform: uppercase;
+    z-index: 1;
+
+
+}
+
+main {
+    height: calc(100%-180px);
+    width: 100%;
+    background-color: var(--nAlto);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+form {
+    height: auto;
+    width: 100%;
+
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to left top, var(--nMedio), var(--nBajo));
+    border-radius: 30px;
+
+}
+
+input {
+    height: 80px;
+    width: 300px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    color: var(--negro);
+    font-size: 1.4em;
+    padding-left: 30px;
+    line-height: 80px;
+    border-radius: 40px;
+    background: var(--blanco);
+    border: 5px solid var(--negro);
+    transition: 0.3s ease;
+    z-index: 1;
+
+
+
+
+}
+
+nav {
+    height: 100px;
+    width: 100vw;
+
+    color: var(--negro);
+    font-size: 1.4em;
+    font-weight: 600;
+    z-index: 1;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    height: 100px;
+    display: flex;
+    align-content: middle;
+    list-style: none;
+
+}
+
+
+
+h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 4.4em;
+    color: var(--negro);
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.subt {
+    
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    font-weight: 800;
+    color: var(--negro);
+    text-transform: uppercase;
+}
+
+.subt2 {
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 60px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--negro);
+}
+
+img {
+    height: auto;
+    width: 35%;
+    margin-left: 40px;
+    margin-top: 12px;
+}
+
+
+#logo {
+    width: 320px;
+    display: flex;
+    align-content: center;
+}
+
+
+
+
+option {
+    font-weight: 600;
+}
+
+.cuerpo {
+
+    margin-top: 90px;
+}
+
+
+
+#historico {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 30px;
+    color: var(--negro);
+
+}
+
+#historico>a {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    color: var(--negro);
+}
+
+
+
+
+
+.contAside {
+    height: calc(100vh - 220px);
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+
+
+
+
+}
+
+.pantallaCambios {
+
+    height: calc(25% - 20px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--nBajo);
+    border-radius: 30px;
+    background-color: var(--negro);
+    padding-top: 35px;
+    padding-bottom: 60px;
+
+}
+
+.pantallaCambios>h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: var(--nBajo);
+
+}
+
+.historico {
+    height: calc(75%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap;
+    border-radius: 30px;
+    background-color: var(--negro);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2em;
+    font-weight: 200;
+    color: var(--blanco);
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.historico>h2 {
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 1.4em;
+color: var(--nBajo);
+
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+
+.history-rates {
+    height: 80vh;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    line-height: 24px;
+    font-family: "Montserrat", sans-serif;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    color: var(--blanco);
+    scrollbar-width: 30px;
+    scrollbar-width: initial;
+    /* Para Firefox */
+    scrollbar-color: var(--nBajo) transparent transparent;
+    /* Para Firefox */
+
+
+}
+
+.fecha {
+    width: 100%;
+    font-weight: bold;
+    font-size: medium;
+    text-align: left;
+}
+
+.operacion {
+    color: var(--blanco);
+    font-weight: bold;
+
+
+}
+
+.icon {
+
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    height: auto;
+    margin: 0;
+    right: 20px;
+    z-index: 0;
+    background-image: url(../img/historicoIcon.svg);
+    background-repeat: no-repeat;
+    padding: 5px;
+
+}
+
+
+
+
+.st0 {
+    color: #F2D338;
+    z-index: 1;
+
+
+}
+
+#btncamb,
+#btnhist {
+    display: none;
+}
+
+.gitfoot {
+    display: none;
+}
+
+.btnmvl {
+    display: none;
+}
+.st1{
+    fill:#F2E3D0;}
+#logoB{
+    
+    display: none;
+}
+
+
+
+@media (min-width:1980px) {
+    main {
+        padding-left: 20%;
+        padding-right: 20%;
+        
+    }
+}
+
+
+
+@media (min-width: 1024px) and (max-height:760px){
+    .cuerpo{
+        margin-top: 20px;
+    }
+    .cabecera{
+        margin-top: 0px;
+    }
+    .titulo{
+        margin-top: 0px;
+    }
+
+}
+
+
+
+@media (max-width: 1024px) {
+    body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    main {
+        height: calc(100% - 180px);
+        width: 100%;
+        background-color: var(--nAlto);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cuerpo {
+        margin-top: 2vw;
+    }
+
+    form {
+        height: calc(70% - 40px);
+        width: 100%;
+        padding: 0px;
+        padding-top: 2dvw;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to left top, var(--nMedio), var(--nBajo));
+        border-radius: 30px;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    .pantallaCambios {
+        display: block;
+        padding-top: 20px;
+        border-radius: 40px;
+        height: 100%;
+        background-color: var(--negro);
+        color: var(--nBajo);
+    }
+
+    .contAside {
+        height: 30%;
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+
+    #logo {
+        width: 150px;
+        position: relative;
+        left: 45dvw;
+    }
+
+    #logo>a>img {
+        width: 100%;
+    }
+
+    #historico {
+        display: flex;
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        right: 0;
+        top: 0;
+
+    }
+
+    .historico {
+        height: auto;
+    }
+
+    .history-rates {
+        max-height: 50%;
+    }
+
+    .historico>h2 {
+        font-size: 2em;
+    }
+
+    .pantallaCambios>h2 {
+        font-size: 2em;
+    }
+
+    .fecha {
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 7vh;
+    }
+
+    input {
+        height: 9vh;
+        max-height: 100px;
+    }
+
+    ;
+
+    select {
+        height: 9vh;
+        max-height: 100px;
+    }
+
+    select {
+        height: 9vh;
+        max-height: 100px;
+    }
+
+    ul {
+        height: auto;
+        width: 100px;
+    }
+
+    .convertir {
+        height: 9vh;
+        max-height: 100px;
+
+    }
+
+    p>span {
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+
+
+    h1 {
+        margin-top: 0;
+    }
+}
+
+
+
+@media(max-width:1024px) and (max-height:780px){
+main{
+    height: calc(100% - 180px);
+    flex-direction: row;
+    padding: 20px;
+}
+form{
+    height: 100%;
+}
+.contAside{
+    flex-direction: column;    
+    width: 40%;
+    height: calc(100dvh - 220px);
+    margin: 0px;
+    gap: 20;
+    padding: 0px;
+    
+    
+}
+.pantallaCambios{
+    height: 40%;
+    min-height: 180px;
+    margin: 0px;
+}
+.historico{
+    display: block;
+    height: 60%;
+    margin: 0px;
+}
+
+}
+
+
+
+@media (max-width:760px) {
+    body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    main {
+        height: calc(100% - 180px);
+        width: 100%;
+        background-color: var(--nAlto);
+        display: flex;
+        flex-direction: column;
+
+
+
+
+    }
+
+    form {
+        padding-top: 2dvw;
+        padding-bottom: 2dvw;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+
+    .historico {
+        display: none;
+        background-color: var(--negro);
+    }
+
+    .floatbtn {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: var(--blanco);
+        color: var(--negro);
+        z-index: 1;
+        position: absolute;
+        bottom: 26vh;
+        right: 40px;
+    }
+
+    .floatbtn:active {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: var(--nBajo);
+        color: var(--negro);
+        z-index: 1;
+        position: absolute;
+        bottom: 260px;
+        right: 40px;
+    }
+
+    .historico {
+        padding-top: 2%;
+        display: none;
+    }
+
+    .historico>h2 {
+
+        color: var(--nBajo);
+    }
+
+    .historico>.icon {
+
+
+        background-image: url(../img/cambioIcon.svg);
+        background-repeat: no-repeat;
+        padding: 5px;
+
+    }
+
+    .historico>.icon svg {
+
+        color: #F2D338;
+
+
+    }
+
+    .historico>button,
+    .pantallaCambios>button {
+
+        position: absolute;
+        display: block;
+        right: 40px;
+        height: 60px;
+        width: 60px;
+        background-color: var(--blanco);
+        border-radius: 50px;
+
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: center;
+        padding: 0px;
+        box-shadow: 0px 6px 8px rgba(237, 237, 237, 0.018);
+        border: 5px solid var(--blanco);
+
+    }
+
+    .pantallaCambios>button:hover {
+
+        border-color: #F29F05;
+        background-color: var(--nAlto);
+
+
+    }
+
+    .historicco>button:hover {
+
+        border-color: #F29F05;
+        background-color: var(--nAlto);
+
+
+    }
+
+
+
+    .cntbtn {
+        margin: 20px;
+    }
+
+
+
+    button:active svg {
+        box-shadow: none;
+        fill: #fff;
+
+    }
+
+    .pantallaCambios {
+        padding-top: 2%;
+        display: flex;
+
+    }
+
+    .pantallaCambios>h2 {
+        padding-top: 2%;
+    }
+
+
+
+
+
+    .pantallaCambios>button>svg {
+        object-fit: cover;
+        z-index: 2;
+        width: 50px;
+        height: auto;
+        fill: white;
+    }
+
+    .pantallaCambios>p>span {
+        font-size: 0.5em;
+    }
+
+
+
+    p>span {
+        font-size: 1.8em;
+        color: var(--blanco);
+
+    }
+
+    .operacion {
+        font-size: 1.5em;
+        color: var(--blanco);
+    }
+
+    .history-rates {
+        height: 70%;
+        padding-bottom: 20px;
+    }
+
+    
+}
+@media (max-width:760px) and (max-height:782px) {
+
+    main{
+        padding-right: 20px;
+    }
+    .contAside{
+        width: 100%;
+    }
+    .pantallaCambios{
+        width: 100%;
+    }
+}
+
+@media (max-width:580px) {
+    body {
+        height: 100%;
+        width: 100%;
+        min-width: 380px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    main {
+        height: calc(100% - 180px);
+        width: 100%;
+        min-width: 380px;
+        background-color: var(--nAlto);
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    form {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    select {
+        margin: 0;
+    }
+
+    input {
+        min-width: 200px;
+        border-radius: 40px 0px 0px 40px;
+        border: 15px 0px 0px 0px;
+        border-color: #595348;
+        border-right: none;
+
+    }
+
+    input:hover,
+    input:valid {
+        border-right: none;
+    }
+
+    .aniLabel:hover,
+    .aniLabel:valid {
+        border-right: none;
+    }
+
+    .currency {
+        border-radius: 0px 40px 40px 0px;
+        border: 0px 15px 15px 0px;
+        border-color: #595348;
+        border-left-style: dashed;
+    }
+
+    h1 {
+        font-size: 12vw;
+        margin-bottom: 20px;
+    }
+
+    .aniLabel {
+        font-size: 2vw;
+    }
+
+
+
+    .historico {
+        display: none;
+        background-color: var(--negro);
+    }
+
+    input:focus+.aniLabel,
+    input:valid+.aniLabel {
+        font-size: 1em;
+        margin-right: 120px;
+    }
+
+    select {
+        margin-left: 0px;
+    }
+
+
+
+
+    .pantallaCambios {
+        padding-top: 2%;
+    }
+
+    .historico>h2 {
+
+        color: var(--nBajo);
+    }
+
+    p>span {
+        font-size: 1.8em;
+        color: var(--blanco);
+
+    }
+
+    .operacion {
+        font-size: 1.5em;
+        color: var(--blanco);
+    }
+
+    .history-rates {
+        height: 70%;
+        padding-bottom: 20px;
+    }
+
+    #btnhist,
+    #btncamb {
+        display: block;
+        visibility: hidden;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: center;
+        width: 100px;
+        background-color: var(--blanco);
+    }
+
+    #logo {
+        width: 100%x;
+        position: relative;
+        left: 40dvw;
+    }
+
+    #logo>a>img {
+        width: 100px;
+    }
+
+    @media (max-width:490px) {}
+
+}
+
+
+@media (max-width:460px) {
+
+    main{
+        padding: 0px;
+        gap: 0;
+        
+    }
+    nav{
+        display: flex; /* Añadir display flex */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; 
+    padding-top: 20px;
+    padding-bottom: 0px;
+    }
+    form{
+        border-radius: 0px;
+        height: calc(90% - 180px);
+        padding-top: 20px;
+    }
+    header,footer{
+        color: var(--negro);
+        background-color: var(--blanco);
+    }
+
+    select,
+    input {
+        font-size: 3.6vw;
+        text-transform: uppercase;
+    }
+
+    a {
+        text-align: center;
+
+    }
+
+    a>img {
+        margin-top: 20px;
+        width: 25%;
+    }
+    .subt{
+        display: none;
+    }
+    .fecha,
+    .operacion {
+
+
+        font-size: 5vw;
+    }
+
+
+    #historico,
+    #historico>a {
+        display: none;
+        
+
+    }
+
+    #showhist2,
+    #showcamb2 {
+        height: 100px;
+        visibility: visible;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-position: center;
+        width: 50%;
+        background-color: var(--blanco);
+    }
+
+    #showhist2 {
+        right: 0;
+        border: none;
+        border-left: 2px dashed var(--negro);
+    }
+
+    #showcamb2 {
+        left: 0;
+        border: none;
+        border-right: 2px dashed var(--negro);
+    }
+
+    #showcamb2 {
+        background-image: url(../img/cambioIcon.svg);
+    }
+
+    #showhist2 {
+        background-image: url(../img/historicoIcon.svg);
+
+    }
+    
+    .historico,.pantallaCambios{
+        height: auto;
+        width: 100;
+        border-radius: 0px;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        
+    }
+    .historico>h2{
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 1.7em;
+    }
+    
+    
+    .pantallaCambios {
+    padding-top: 20px;
+    }
+    .pantallaCambios>button,
+    .historico>button {
+        bottom: 10;
+    }
+
+ 
+
+    .pantallaCambios>button {
+        display: none;
+    }
+
+    input:focus,
+    input:valid {
+        border-right: 0px;
+    }
+
+    #showcamb,
+    #showhist {
+        display: none;
+
+    }
+
+    #logo {
+        display: none;
+    }
+
+ 
+    #logoB {
+        display: block;
+       margin: 0 a;
+        justify-content: center;
+        align-items: center;
+        width: 100dvw;
+        height: 100px;
+        padding-bottom: 10px;
+    }
+
+    #logoB>a {
+        box-sizing: border-box;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logoB>a>img {
+        width: 100px;
+        height: auto;
+    }
+
+    .btnmvl {
+        display: block;
+        height: 100px;
+        width: 100%;
+    }
+    .btnmvl>.icon{
+    
+            display: none;
+           
+           
+           
+          
+            
+        
+        }
+       
+   
+    }
+
+
+
+
+
+
+@media (max-width:383px) {
+    main {
+        height: 100%;
+       
+    }
+
+    body {
+        background-color: var(--nAlto);
+    }
+    header{
+        position: relative;
+        width: 100%;
+        height: 100px; 
+       
+    }
+    header>a{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-height: 100%;
+    }
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+    }
+
+    footer>h3 {
+        display: none;
+        width: fit-content;
+        margin: 0 auto;
+        padding-top: 30px;
+        text-align: center;
+
+    }
+.btnmvl{
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+    height: 100px;
+}
+    .contAside{
+        height: 100%;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .gitfoot {
+        display: block;
+        width: 30%;
+        height: auto;
+        z-index: 1;
+    }
+
+    #logo {
+        width: 100%x;
+        position: relative;
+        left: 30dvw;
+    }
+
+    #logo>a>img {
+        width: 70px;
+    }
+}
+
+@media(max-width:280px){
+    html{
+        max-width: 280px;
+        height: fit-content;
+    }
+    header{
+        height: 100px;
+    }
+    form{
+        height: 50dvh;
+        padding-bottom: 20px;
+    }
+    .contAside{
+        width: 100%;
+        height: 49dvh;
+        gap: 0;
+    }
+    .pantallaCambios,.historico{
+        height: 40dvh;
+    }
+    .btnmvl{
+        display: flex;
+        flex-direction: row;
+        
+        width: 100%;
+        height: 100px;
+        
+    }
+   #showhist2,#showcamb2{
+    width: 50%;
+    position: initial;
+    display: block;
+    
+   }
+   #showhist2{
+    border-left: 0;
+    border-right: 2px dashed var(--negro);
+   }
+   #showcamb2{
+    border-right: 0;
+    border-left: 2px dashed var(--negro);
+   }
+  
+}
+@media(max-width:280px){
+    html{
+        max-width: 280px;
+        height: fit-content;
+    }
+    header{
+        height: 100px;
+    }
+    form{
+        height: 60dvh;
+    }
+    .contAside{
+        width: 100%;
+        height: 100%;
+        gap: 0;
+    }
+    .pantallaCambios,.historico{
+        height: 40dvh;
+    }
+    .btnmvl{
+        display: flex;
+        flex-direction: row;
+        
+        width: 100%;
+        height: 100px;
+        
+    }
+   #showhist2,#showcamb2{
+    width: 50%;
+    position: initial;
+    display: block;
+    
+   }
+   #showhist2{
+    border-left: 0;
+    border-right: 2px dashed var(--negro);
+   }
+   #showcamb2{
+    border-right: 0;
+    border-left: 2px dashed var(--negro);
+   }
+  
+}
+
+
+
+@media(max-height:927px) {
+    .subt {
+        display: none;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,102 @@
+<!--BIENVENIDO!-->
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/labelanim.css">
+    <link rel="stylesheet" href="./css/btnanim.css">
+    <link rel="stylesheet" href="./css/scroll.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>CONVERSOR DE DIVISA</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="logo"><a href="index.html"><img src="./img/mcareb.svg" alt="Logo"></a></li>
+                <li id="logoB"><a href="index.html"><img src="./img/mcareb2.svg" alt="Logo"></a></li>
+                <li id="historico"><a href="historico.html"><img src="./img/github-mark.svg" alt="Ver en Github"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="pantallaCambio" id="formulario">
+
+            <section class="cabecera">
+                <h1 class="titulo">Money Care</h1>
+                <h2 class="subt">Currency exchange app</h2>
+
+
+            </section>
+            <section class="cuerpo">
+                <div class="caja origen">
+
+                    <input type="text" class="cantidad" id="input-currency" placeholder="Enter an amount"
+                        name="ncantidad" pattern="\d{1,10}" maxlength="10" required>
+                    <label class="aniLabel" for="ncantidad">Enter an amount &emsp; </label>
+                    <select name="divisaOrigen" class="currency">
+                        <option>Currency</option>
+                    </select>
+
+                </div>
+
+                <div class="caja destino">
+
+                    <input type="text" id="output-currency" placeholder="Result" disabled>
+                    <select name="divisaDestino" class="currency">
+                        <option>Currency</span></option>
+                    </select>
+
+                </div>
+
+                <div class="cntBtn">
+                    <button type="submit" class="convertir">
+                        <span> Convert </span>
+                    </button>
+                </div>
+            </section>
+        </form>
+        <div class="btnmvl">
+            <button class="icon" id='showhist2'></button>
+            <button class="icon" id='showcamb2'></button>
+        </div>
+
+        <div class="contAside">
+            <aside class="pantallaCambios" id="camb">
+                <button class="icon" id='showhist'>
+
+                </button>
+                <h2>Exchange</h2>
+                <div id="exchange-rates">
+                    <!-- Aquí se muestran los tipos de cambio en tiempo real -->
+                </div>
+            </aside>
+
+            <aside class="historico" id="hist">
+                <button class="icon" id='showcamb'>
+                </button>
+                <h2>History</h2>
+                <div class="history-rates">
+                    <!-- Aquí se muestra el historico -->
+                </div>
+            </aside>
+        </div>
+
+    </main>
+
+    <footer>
+        <a href="historico.html" class="gitfoot"><img src="./img/github-mark.svg" alt="Ver en Github"></a>
+        <h3>Carlos Tenajas - Frankfurter API</h3>
+    </footer>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>
